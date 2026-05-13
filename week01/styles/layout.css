@@ -16,8 +16,8 @@ body {
 }
 
 header {
-  grid-row: 1;
-  grid-column: 1 / 5;
+    grid-row: 1;
+    grid-column: 1 / 5;
 }
 
 h1 {
@@ -55,10 +55,10 @@ h1 {
 }
 
 main {
-  background: rgb(103, 186, 201);
-  grid-column: 1 / 4;
-  grid-row: 2;
-  padding: 2rem;
+    background: rgb(103, 186, 201);
+    grid-column: 1 / 4;
+    grid-row: 2;
+    padding: 2rem;
 }
 
 aside {
@@ -69,8 +69,8 @@ aside {
 }
 
 footer {
-  background: rgb(121, 101, 46);
-  padding: 4rem;
-  text-align: center;
-  grid-column: 1 / 5;
+    background: rgb(121, 101, 46);
+    padding: 4rem;
+    text-align: center;
+    grid-column: 1 / 5;
 }
