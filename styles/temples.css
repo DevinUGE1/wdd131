@@ -1,0 +1,116 @@
+/*W02 Assignment: Picture Album by Devin Gamboa Enciso*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+
+/* HEADER */
+
+header {
+    background-color: #2fb3d4;
+    color: #ddd;
+    padding: 1rem;
+    position: relative;
+}
+
+#course-title {
+    font-size: 2rem;
+}
+
+/* MENU BUTTON */
+
+#menu-toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #ddd;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+.navigation {
+    list-style: none;
+}
+
+.navigation li {
+    margin: 1rem 0;
+}
+
+.navigation a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+/* GALLERY */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #2fb3d4;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #2fb3d4;
+    color: #ddd;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
