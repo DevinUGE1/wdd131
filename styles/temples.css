@@ -1,5 +1,4 @@
 /*W02 Assignment: Picture Album by Devin Gamboa Enciso*/
-
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +14,12 @@ body {
 
 header {
     background-color: #2fb3d4;
-    color: #ddd;
+    color: #eee;
     padding: 1rem;
     position: relative;
 }
 
-#course-title {
+#gallery-title {
     font-size: 2rem;
 }
 
@@ -32,7 +31,7 @@ header {
     right: 20px;
     background: none;
     border: none;
-    color: #ddd;
+    color: #eee;
     font-size: 2rem;
     cursor: pointer;
 }
@@ -41,10 +40,11 @@ header {
 
 nav {
     display: none;
+    flex-direction: column;
 }
 
 nav.open {
-    display: block;
+    display: flex;
 }
 
 .navigation {
@@ -56,7 +56,7 @@ nav.open {
 }
 
 .navigation a {
-    color: #ddd;
+    color: #eee;
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -109,7 +109,7 @@ figcaption {
 
 footer {
     background-color: #2fb3d4;
-    color: #ddd;
+    color: #eee;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
