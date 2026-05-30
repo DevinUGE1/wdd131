@@ -51,7 +51,8 @@ main {
 #weather {
     background-color: var(--light-color);
     padding: 1.5rem;
-    width: 320px;
+    width: 90%;
+    margin: 1rem auto;
     box-shadow: 0 0 15px rgba(0,0,0,0.25);
 }
 
@@ -67,14 +68,6 @@ main {
 #weather p {
     margin: .75rem 0;
     line-height: 1.4;
-}
-
-/* MOBILE*/
-
-#data,
-#weather {
-    width: 90%;
-    margin: 1rem auto;
 }
 
 /* FOOTER */
