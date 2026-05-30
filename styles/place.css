@@ -1,0 +1,97 @@
+/*W03 Assignment: Country Page by Devin Gamboa Enciso*/
+:root {
+    --primary-color: #d91023; /* Perú red */
+    --secondary-color: #2fb3d4; /* blue-light accent */
+    --light-color: rgba(255, 255, 255, 0.85);
+    --text-color: #222;
+    --font-family: "Roboto", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 12px solid var(--secondary-color);
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+/* HERO IMAGE */
+
+main {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* DATA & WEATHER */
+
+#data,
+#weather {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    width: 320px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+}
+
+#data h2,
+#weather h2 {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 1rem;
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+}
+
+#data p,
+#weather p {
+    margin: .75rem 0;
+    line-height: 1.4;
+}
+
+/* MOBILE*/
+
+#data,
+#weather {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+    color: #ece904;
+}

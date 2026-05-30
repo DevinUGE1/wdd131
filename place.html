@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perú Country Page</title>
+    <meta name="description" content="The subject of the page is a country or place where you live, have visited, or wish to visit.">
+    <meta name="author" content="Devin Gamboa Enciso">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    
+</head>
+<body>
+
+    <header>
+        <h1>Perú</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/peru-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/peru-medium.webp" media="(min-width: 500px)">
+                <img src="images/peru-small.webp" alt="Perú" width="500" height="250">
+            </picture>
+        </div>
+        
+        <section id="data">
+           <h2>Data</h2>
+           <p><strong>Area:</strong> 1,285,216 sq km</p>
+           <p><strong>Population:</strong> 34,900,000</p>
+           <p><strong>Capital:</strong> Lima</p>
+           <p><strong>Languages:</strong> Español</p>
+           <p><strong>Currency:</strong> Soles</p>
+           <p><strong>Time Zone:</strong>(GMT-5)</p>
+           <p><strong>Calling Code:</strong> +51</p>
+           <p><strong>Internet TLD:</strong> .pe</p>
+         </section>
+
+         <section id="weather">
+            <h2>Weather</h2>
+            <img src="images/icon.svg" alt="Icon of weather" class="weather-icon" width="64" height="64">
+            <p><strong>Temperature:</strong> <span id="temperature">10</span> °C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> <span id="windSpeed">5</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Devin Gamboa Enciso | Huanta, Perú ❤️🤍❤️</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
