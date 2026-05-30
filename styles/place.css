@@ -83,8 +83,8 @@ footer {
     background-color: var(--secondary-color);
     color: var(--light-color);
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
 }
 
 footer p {
