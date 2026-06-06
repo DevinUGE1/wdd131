@@ -1,4 +1,5 @@
-/*W02 Assignment: Picture Album by Devin Gamboa Enciso*/
+/*W04 Assignment: Picture Album Enhancement by Devin Gamboa Enciso*/
+
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +37,13 @@ header {
     cursor: pointer;
 }
 
+#menu-toggle::before {
+    content: "☰";
+}
+
+#menu-toggle.open::before {
+    content: "X";
+}
 /* NAVIGATION */
 
 nav {

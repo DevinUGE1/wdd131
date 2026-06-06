@@ -1,0 +1,41 @@
+/*W04 Assignment: Picture Album Enhancement by Devin Gamboa Enciso*/
+
+@media screen and (min-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navigation li {
+        margin: 0;
+    }
+
+    /* GALLERY */
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
