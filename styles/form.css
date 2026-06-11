@@ -1,0 +1,212 @@
+/*W05 Assignment: Product Review Form by Devin Gamboa Enciso*/
+
+:root {
+    --primary-color: #d91023;
+    --secondary-color: #2fb3d4;
+    --light-color: rgba(255, 255, 255, 0.85);
+    --accent1-color: #fff;
+    --text-color: #222;
+    --font: "Roboto", sans-serif;
+    --background-form: #ffe0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--accent1-color);
+    color: var(--text-color);
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* FORM */
+
+form {
+    background-color: var(--background-form);
+    max-width: 550px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+input[type="date"],
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: .8rem;
+    margin-top: .5rem;
+    border: 1px solid var(--background-form);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* FIELDSETS */
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+/* RATING */
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.rating legend {
+    width: 100%;
+}
+
+.rating div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating label {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.rating input[type="radio"] {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/* FEATURES */
+
+.features p {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.features label {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    font-weight: normal;
+    margin-top: .7rem;
+}
+
+.features input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* OPTIONAL TEXT */
+
+.optional {
+    color: blue;
+    font-size: .9rem;
+    font-weight: normal;
+}
+
+/* SUBMIT BUTTON */
+
+input[type="submit"] {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+input[type="submit"]:hover {
+    opacity: .85;
+}
+
+/* THANK YOU PAGE */
+
+.thanks {
+    margin: 2rem;
+    justify-self: center;
+    min-height: 600px;
+    font-size: 300%;
+    text-align: center;
+}
+
+.thanks p,
+.thanks div {
+    border: 5px solid var(--primary-color);
+    background-color: #ffe0e0;
+    color: var(--text-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.thanks div {
+    text-decoration: overline;
+}
+/* FOOTER */
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    display: block;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 900px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    form {
+        max-width: 650px;
+    }
+}
