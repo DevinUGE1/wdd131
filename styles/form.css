@@ -8,6 +8,8 @@
     --text-color: #222;
     --font: "Roboto", sans-serif;
     --background-form: #ffe0e0;
+    --optional-color: #0000ff;
+    
 }
 
 * {
@@ -140,7 +142,7 @@ fieldset {
 /* OPTIONAL TEXT */
 
 .optional {
-    color: blue;
+    color: var(--optional-color);
     font-size: .9rem;
     font-weight: normal;
 }
@@ -178,7 +180,7 @@ input[type="submit"]:hover {
 .thanks p,
 .thanks div {
     border: 5px solid var(--primary-color);
-    background-color: #ffe0e0;
+    background-color: var(--background-form);
     color: var(--text-color);
     padding: 1rem;
     margin-bottom: 1rem;
