@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurante Do Peruano | Contact</title>
+<meta name="description" content="Contact with us.">
+<link rel="stylesheet" href="styles/project.css">
+<script src="scripts/project.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Make a Reservation</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Reservations</a>
+        </nav>
+    </header>
+    
+    <main>
+        <form id="reservationForm">
+            <label> 
+                name
+                <input type="text" id="name" required>
+            </label>
+
+            <label>
+                Email
+                <input type="email" id="email" required>
+            </label>
+
+            <label>
+                Guests
+                <input type="number" id="guests" min="1" required>
+            </label>
+
+            <label>
+                Reservation Date
+                <input type="date" id="date" required>
+            </label>
+            <button type="submit">Reserve Table</button>
+
+        </form>
+        <p id="confirmation"></p>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Devin Gamboa Enciso | Huanta, Perú ❤️🤍❤️</p>
+        <p id="lastModified"></p>
+        <nav class="socialmedia">
+            <a href="#" aria-label="Facebook">
+                <img src="images/facebooklogo.png" alt="Facebook icon">
+            </a>
+            <a href="#" aria-label="Instagram">
+                <img src="images/instagram.png" alt="Instagram icon">
+            </a>
+            <a href="#" aria-label="Twitter">
+                <img src="images/twitter.png" alt="Twitter icon">
+            </a>
+        </nav>
+        <p><a href="references.html">Project Attribution & References</a></p>
+    </footer>
+
+</body>
+</html>
